@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "unipi-tour-guide", "unipi-tour-guide.csproj", "{EBD478A5-6B71-4F8B-B8FB-CDB687F1A161}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBD478A5-6B71-4F8B-B8FB-CDB687F1A161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD478A5-6B71-4F8B-B8FB-CDB687F1A161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD478A5-6B71-4F8B-B8FB-CDB687F1A161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD478A5-6B71-4F8B-B8FB-CDB687F1A161}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5752E10F-C148-4F77-85F4-70BC4B9B7BE7}
+	EndGlobalSection
+EndGlobal
