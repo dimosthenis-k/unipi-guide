@@ -34,13 +34,14 @@
             this.username_textbox = new System.Windows.Forms.TextBox();
             this.password_textbox = new System.Windows.Forms.TextBox();
             this.no_account_link = new System.Windows.Forms.LinkLabel();
+            this.login_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // username
             // 
             this.username.AutoSize = true;
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(145, 81);
+            this.username.Location = new System.Drawing.Point(144, 91);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(105, 24);
             this.username.TabIndex = 0;
@@ -51,7 +52,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(145, 173);
+            this.label1.Location = new System.Drawing.Point(145, 174);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 24);
             this.label1.TabIndex = 1;
@@ -66,7 +67,7 @@
             // 
             // password_textbox
             // 
-            this.password_textbox.Location = new System.Drawing.Point(145, 212);
+            this.password_textbox.Location = new System.Drawing.Point(145, 201);
             this.password_textbox.Name = "password_textbox";
             this.password_textbox.Size = new System.Drawing.Size(100, 20);
             this.password_textbox.TabIndex = 3;
@@ -83,11 +84,22 @@
             this.no_account_link.TabStop = true;
             this.no_account_link.Text = "Continue without an account";
             // 
+            // login_button
+            // 
+            this.login_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.login_button.Location = new System.Drawing.Point(159, 227);
+            this.login_button.Name = "login_button";
+            this.login_button.Size = new System.Drawing.Size(75, 23);
+            this.login_button.TabIndex = 5;
+            this.login_button.Text = "Log In";
+            this.login_button.UseVisualStyleBackColor = true;
+            // 
             // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(383, 459);
+            this.Controls.Add(this.login_button);
             this.Controls.Add(this.no_account_link);
             this.Controls.Add(this.password_textbox);
             this.Controls.Add(this.username_textbox);
@@ -110,6 +122,7 @@
         private System.Windows.Forms.TextBox username_textbox;
         private System.Windows.Forms.TextBox password_textbox;
         private System.Windows.Forms.LinkLabel no_account_link;
+        private System.Windows.Forms.Button login_button;
     }
 }
 
