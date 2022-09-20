@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.username_textbox = new System.Windows.Forms.TextBox();
             this.password_textbox = new System.Windows.Forms.TextBox();
+            this.no_account_link = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // username
@@ -65,16 +66,29 @@
             // 
             // password_textbox
             // 
-            this.password_textbox.Location = new System.Drawing.Point(149, 212);
+            this.password_textbox.Location = new System.Drawing.Point(145, 212);
             this.password_textbox.Name = "password_textbox";
             this.password_textbox.Size = new System.Drawing.Size(100, 20);
             this.password_textbox.TabIndex = 3;
+            // 
+            // no_account_link
+            // 
+            this.no_account_link.ActiveLinkColor = System.Drawing.Color.PowderBlue;
+            this.no_account_link.AutoSize = true;
+            this.no_account_link.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.no_account_link.Location = new System.Drawing.Point(126, 272);
+            this.no_account_link.Name = "no_account_link";
+            this.no_account_link.Size = new System.Drawing.Size(143, 13);
+            this.no_account_link.TabIndex = 4;
+            this.no_account_link.TabStop = true;
+            this.no_account_link.Text = "Continue without an account";
             // 
             // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(383, 459);
+            this.Controls.Add(this.no_account_link);
             this.Controls.Add(this.password_textbox);
             this.Controls.Add(this.username_textbox);
             this.Controls.Add(this.label1);
@@ -95,6 +109,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox username_textbox;
         private System.Windows.Forms.TextBox password_textbox;
+        private System.Windows.Forms.LinkLabel no_account_link;
     }
 }
 
