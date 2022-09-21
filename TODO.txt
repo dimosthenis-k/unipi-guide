@@ -1,1 +1,9 @@
+-- COLOR PATTERN | CAN BE CHANGED LATER --
+BLUE : #222C54
+WHITE: #F7F2EB;
+RED: #A22631
+
+--------
+
+---- TO-DO LIST 
 - set form1.signuplabel.enabled = true after clicking register button on sign up form

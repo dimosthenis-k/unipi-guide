@@ -28,13 +28,7 @@ namespace unipi_tour_guide
 
             // label colors
             this.username.ForeColor = ColorTranslator.FromHtml("#A22631");
-            this.password.ForeColor = ColorTranslator.FromHtml("#A22631");
-
-            // setter for 'Sign up' label
-            void setSignupLabel(bool v)
-            {
-                signup_label.Enabled = v;
-            }
+            this.password.ForeColor = ColorTranslator.FromHtml("#A22631")
 
 
         }
