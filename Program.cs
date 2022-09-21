@@ -16,7 +16,7 @@ namespace unipi_tour_guide
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new form1());
         }
     }
 }
