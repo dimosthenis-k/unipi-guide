@@ -1,0 +1,1 @@
+- set form1.signuplabel.enabled = true after clicking register button on sign up form
