@@ -1,4 +1,6 @@
-﻿namespace unipi_tour_guide
+﻿using System;
+
+namespace unipi_tour_guide
 {
     partial class Form2
     {
@@ -62,7 +64,7 @@
             // 
             this.password_label.AutoSize = true;
             this.password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.password_label.Location = new System.Drawing.Point(143, 238);
+            this.password_label.Location = new System.Drawing.Point(143, 225);
             this.password_label.Name = "password_label";
             this.password_label.Size = new System.Drawing.Size(86, 20);
             this.password_label.TabIndex = 2;
@@ -84,8 +86,9 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(125, 261);
+            this.textBox3.Location = new System.Drawing.Point(125, 248);
             this.textBox3.Name = "textBox3";
+            this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(124, 20);
             this.textBox3.TabIndex = 5;
             // 
@@ -104,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 462);
+            this.ClientSize = new System.Drawing.Size(371, 412);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -120,6 +123,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            form1.signup_label.Enabled = true;
         }
 
         #endregion

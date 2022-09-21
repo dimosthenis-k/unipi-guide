@@ -86,6 +86,7 @@
             this.no_account_link.TabIndex = 4;
             this.no_account_link.TabStop = true;
             this.no_account_link.Text = "Continue without an account";
+            this.no_account_link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.no_account_link_LinkClicked);
             // 
             // login_button
             // 

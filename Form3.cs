@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace unipi_tour_guide
 {
-    public partial class Form2 : Form
+    public partial class Form3 : Form
     {
-        public Form2()
+        public Form3()
         {
             InitializeComponent();
         }
-        
-        private void Form2_Load(object sender, EventArgs e)
-        {
-        }
     }
 }
-

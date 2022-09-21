@@ -12,12 +12,14 @@ namespace unipi_tour_guide
 {
     public partial class form1 : Form
     {
+        
         public form1()
         {
+
             InitializeComponent();
             // setting up log in form images and colors
-
             banner_picturebox.Image = Image.FromFile(@"resources/unipi-banner.png");
+
             // banner background color RED
             banner_picturebox.BackColor = ColorTranslator.FromHtml("#A22631");
 
@@ -27,6 +29,12 @@ namespace unipi_tour_guide
             // label colors
             this.username.ForeColor = ColorTranslator.FromHtml("#A22631");
             this.password.ForeColor = ColorTranslator.FromHtml("#A22631");
+
+            // setter for 'Sign up' label
+            void setSignupLabel(bool v)
+            {
+                signup_label.Enabled = v;
+            }
 
 
         }
@@ -48,11 +56,25 @@ namespace unipi_tour_guide
 
         private void signup_label_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+           
             Form2 SignUp = new Form2();
             SignUp.Show();
 
-            // disabling sign up button after its clicked | prevents multiple sign up forms from appearing
+            // disabling sign up labeling after clicking | prevents multiple sign up forms from appearing
             signup_label.Enabled = false; 
         }
+
+        private void no_account_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // displaying guest user limitations notification
+            MessageBox.Show("Σημαντικό: Μερικές από τις λειτουργίες της εφαρμογής δεν θα είναι διαθέσιμες αν συνεχίσετε ως επισκέπτης.");
+
+            Form3 mainMenu = new Form3();
+            mainMenu.Show();
+            
+        }
+
+        
+
     }
 }
