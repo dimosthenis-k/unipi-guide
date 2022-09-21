@@ -30,7 +30,6 @@ namespace unipi_tour_guide
             this.username.ForeColor = ColorTranslator.FromHtml("#A22631");
             this.password.ForeColor = ColorTranslator.FromHtml("#A22631")
 
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
