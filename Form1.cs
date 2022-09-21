@@ -45,5 +45,14 @@ namespace unipi_tour_guide
         {
 
         }
+
+        private void signup_label_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form2 SignUp = new Form2();
+            SignUp.Show();
+
+            // disabling sign up button after its clicked | prevents multiple sign up forms from appearing
+            signup_label.Enabled = false; 
+        }
     }
 }

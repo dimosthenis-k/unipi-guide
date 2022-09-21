@@ -108,6 +108,7 @@
             this.signup_label.TabIndex = 6;
             this.signup_label.TabStop = true;
             this.signup_label.Text = "Sign Up";
+            this.signup_label.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signup_label_LinkClicked);
             // 
             // banner_picturebox
             // 
