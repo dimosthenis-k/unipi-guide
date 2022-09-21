@@ -15,6 +15,7 @@ namespace unipi_tour_guide
         public form1()
         {
             InitializeComponent();
+            banner_picturebox.ImageLocation = @"./resources/unipi banner.png";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -23,6 +24,11 @@ namespace unipi_tour_guide
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void banner_picturebox_Click(object sender, EventArgs e)
         {
 
         }

@@ -35,6 +35,9 @@
             this.password_textbox = new System.Windows.Forms.TextBox();
             this.no_account_link = new System.Windows.Forms.LinkLabel();
             this.login_button = new System.Windows.Forms.Button();
+            this.signup_label = new System.Windows.Forms.LinkLabel();
+            this.banner_picturebox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.banner_picturebox)).BeginInit();
             this.SuspendLayout();
             // 
             // username
@@ -77,7 +80,7 @@
             this.no_account_link.ActiveLinkColor = System.Drawing.Color.PowderBlue;
             this.no_account_link.AutoSize = true;
             this.no_account_link.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.no_account_link.Location = new System.Drawing.Point(126, 272);
+            this.no_account_link.Location = new System.Drawing.Point(125, 302);
             this.no_account_link.Name = "no_account_link";
             this.no_account_link.Size = new System.Drawing.Size(143, 13);
             this.no_account_link.TabIndex = 4;
@@ -94,11 +97,35 @@
             this.login_button.Text = "Log In";
             this.login_button.UseVisualStyleBackColor = true;
             // 
+            // signup_label
+            // 
+            this.signup_label.ActiveLinkColor = System.Drawing.Color.PowderBlue;
+            this.signup_label.AutoSize = true;
+            this.signup_label.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.signup_label.Location = new System.Drawing.Point(174, 273);
+            this.signup_label.Name = "signup_label";
+            this.signup_label.Size = new System.Drawing.Size(45, 13);
+            this.signup_label.TabIndex = 6;
+            this.signup_label.TabStop = true;
+            this.signup_label.Text = "Sign Up";
+            // 
+            // banner_picturebox
+            // 
+            this.banner_picturebox.InitialImage = global::unipi_tour_guide.Properties.Resources.unipi_banner1;
+            this.banner_picturebox.Location = new System.Drawing.Point(1, 350);
+            this.banner_picturebox.Name = "banner_picturebox";
+            this.banner_picturebox.Size = new System.Drawing.Size(381, 82);
+            this.banner_picturebox.TabIndex = 7;
+            this.banner_picturebox.TabStop = false;
+            this.banner_picturebox.Click += new System.EventHandler(this.banner_picturebox_Click);
+            // 
             // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(383, 459);
+            this.Controls.Add(this.banner_picturebox);
+            this.Controls.Add(this.signup_label);
             this.Controls.Add(this.login_button);
             this.Controls.Add(this.no_account_link);
             this.Controls.Add(this.password_textbox);
@@ -110,6 +137,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Unipi Guide";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.banner_picturebox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,6 +151,8 @@
         private System.Windows.Forms.TextBox password_textbox;
         private System.Windows.Forms.LinkLabel no_account_link;
         private System.Windows.Forms.Button login_button;
+        private System.Windows.Forms.LinkLabel signup_label;
+        private System.Windows.Forms.PictureBox banner_picturebox;
     }
 }
 
