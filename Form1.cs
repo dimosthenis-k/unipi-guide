@@ -15,7 +15,9 @@ namespace unipi_tour_guide
         public form1()
         {
             InitializeComponent();
-            banner_picturebox.ImageLocation = @"./resources/unipi banner.png";
+            // setting up log in form images
+            //banner_picturebox.Image = Image.FromFile("./resources/unipi-banner.png");
+            banner_picturebox.Image = Image.FromFile(@"resources/unipi-banner.png");
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -111,10 +111,12 @@
             // 
             // banner_picturebox
             // 
-            this.banner_picturebox.InitialImage = global::unipi_tour_guide.Properties.Resources.unipi_banner1;
-            this.banner_picturebox.Location = new System.Drawing.Point(1, 350);
+            this.banner_picturebox.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.banner_picturebox.InitialImage = null;
+            this.banner_picturebox.Location = new System.Drawing.Point(3, 6);
             this.banner_picturebox.Name = "banner_picturebox";
             this.banner_picturebox.Size = new System.Drawing.Size(381, 82);
+            this.banner_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.banner_picturebox.TabIndex = 7;
             this.banner_picturebox.TabStop = false;
             this.banner_picturebox.Click += new System.EventHandler(this.banner_picturebox_Click);
