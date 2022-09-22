@@ -5,5 +5,21 @@ RED: #A22631
 
 --------
 
----- TO-DO LIST 
+---- FIXME
+- log in validation w/ database
+- sign up validation w/ database
 - set form1.signuplabel.enabled = true after clicking register button on sign up form
+
+
+---- TO-DO (assignment requirements)
+- Greek Language
+-login form
+- sign up form
+-implement menu toolbar on all forms | exit, about functionalities minimum
+-implement slideshow using timer
+- implement calendar function including events
+- input exception handling
+- implement export info to file functionality (e.g. export professor contact information)
+
+
+

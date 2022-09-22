@@ -17,6 +17,7 @@ namespace unipi_tour_guide
         {
 
             InitializeComponent();
+
             // setting up log in form images and colors
             banner_picturebox.Image = Image.FromFile(@"resources/unipi-banner.png");
 
@@ -28,8 +29,11 @@ namespace unipi_tour_guide
 
             // label colors
             this.username.ForeColor = ColorTranslator.FromHtml("#A22631");
-            this.password.ForeColor = ColorTranslator.FromHtml("#A22631")
+            this.password.ForeColor = ColorTranslator.FromHtml("#A22631");
 
+            // textbox colors
+            this.username_textbox.BackColor = ColorTranslator.FromHtml("#F7F2EB");
+            this.password_textbox.BackColor = ColorTranslator.FromHtml("#F7F2EB");
 
         }
 

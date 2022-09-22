@@ -127,7 +127,7 @@ namespace unipi_tour_guide
 
         private void button1_Click(object sender, EventArgs e)
         {
-            form1.signup_label.Enabled = true;
+            
         }
 
         #endregion
