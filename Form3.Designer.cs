@@ -31,27 +31,23 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.slideshow_picturebox = new System.Windows.Forms.PictureBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.slideshow_timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.slideshow_picturebox)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // slideshow_picturebox
             // 
-            this.slideshow_picturebox.Location = new System.Drawing.Point(488, 29);
+            this.slideshow_picturebox.Location = new System.Drawing.Point(449, 27);
             this.slideshow_picturebox.Name = "slideshow_picturebox";
-            this.slideshow_picturebox.Size = new System.Drawing.Size(300, 409);
+            this.slideshow_picturebox.Size = new System.Drawing.Size(339, 183);
+            this.slideshow_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slideshow_picturebox.TabIndex = 0;
             this.slideshow_picturebox.TabStop = false;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // menuStrip1
             // 
@@ -87,6 +83,11 @@
             this.exitToolStripMenuItem1.Text = "Exit";
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
+            // slideshow_timer
+            // 
+            this.slideshow_timer.Interval = 3000;
+            this.slideshow_timer.Tick += new System.EventHandler(this.slideshow_timer_Tick);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -110,10 +111,10 @@
         #endregion
 
         private System.Windows.Forms.PictureBox slideshow_picturebox;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        private System.Windows.Forms.Timer slideshow_timer;
     }
 }
