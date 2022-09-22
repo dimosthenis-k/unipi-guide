@@ -32,12 +32,34 @@ namespace unipi_tour_guide
         {
             InitializeComponent();
 
-            // setting form3 background color
-            this.BackColor = ColorTranslator.FromHtml("#F7F2EB");
+            // setting form3 colors
+            this.BackColor = ColorTranslator.FromHtml("#222C54");           //blue
+
+
+            main_menu_label.ForeColor = ColorTranslator.FromHtml("#A22631");
+            welcome_label.ForeColor = ColorTranslator.FromHtml("#A22631");      // red
 
             // starting slideshow timer on form load
             slideshow_timer.Enabled = true;
 
+            // hiding log in form
+            // form1.ActiveForm.Hide();
+
+            // form3 button colors
+            university_section_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
+            university_section_button.BackColor = ColorTranslator.FromHtml("#A22631");
+
+            schools_section_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
+            schools_section_button.BackColor = ColorTranslator.FromHtml("#A22631");
+
+            services_section_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
+            services_section_button.BackColor = ColorTranslator.FromHtml("#A22631");
+
+            contact_section_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
+            contact_section_button.BackColor = ColorTranslator.FromHtml("#A22631");
+
+            calendar_section_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
+            calendar_section_button.BackColor = ColorTranslator.FromHtml("#A22631");
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -60,6 +82,17 @@ namespace unipi_tour_guide
         private void slideshow_timer_Tick(object sender, EventArgs e)
         {
             loadNextImage();
+        }
+
+        private void main_menu_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void schools_section_button_Click(object sender, EventArgs e)
+        {
+            SchoolsForm schools = new SchoolsForm();
+            schools.Show();
         }
     }
 }
