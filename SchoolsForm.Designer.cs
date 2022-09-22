@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SchoolsForm));
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.school_info_textbox = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -39,22 +39,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.schools_unipi_logo)).BeginInit();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // school_info_textbox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(254, 65);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(534, 373);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.school_info_textbox.Location = new System.Drawing.Point(254, 65);
+            this.school_info_textbox.Name = "school_info_textbox";
+            this.school_info_textbox.Size = new System.Drawing.Size(534, 373);
+            this.school_info_textbox.TabIndex = 0;
+            this.school_info_textbox.Text = "";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 189);
+            this.button1.Location = new System.Drawing.Point(12, 181);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 47);
+            this.button1.Size = new System.Drawing.Size(173, 55);
             this.button1.TabIndex = 1;
             this.button1.Text = "Οικονομικών, Επιχειρηματικών και Κοινωνικών Σπουδών";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -64,6 +65,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Ναυτιλίας και Βιομηχανίας";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -73,6 +75,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Χρηματοοικονομικής και Στατιστικής";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -82,6 +85,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "Τεχνολογιών Πληροφορικής και Επικοινωνιών";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // school_selection_label
             // 
@@ -113,7 +117,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.school_info_textbox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SchoolsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -127,7 +131,7 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox school_info_textbox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
