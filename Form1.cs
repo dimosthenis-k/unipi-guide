@@ -28,7 +28,7 @@ namespace unipi_tour_guide
 
             // label colors
             this.username.ForeColor = ColorTranslator.FromHtml("#A22631");
-            this.password.ForeColor = ColorTranslator.FromHtml("#A22631")
+            this.password.ForeColor = ColorTranslator.FromHtml("#A22631");
 
         }
 
