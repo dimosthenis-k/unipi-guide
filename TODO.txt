@@ -22,4 +22,4 @@ RED: #A22631
 - implement export info to file functionality (e.g. export professor contact information)
 
 
-
+ richTextBox1.LoadFile("text files\\elare.txt",RichTextBoxStreamType.PlainText);

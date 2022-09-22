@@ -34,5 +34,25 @@ namespace unipi_tour_guide
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            school_info_textbox.LoadFile(".//resources//econ.txt", RichTextBoxStreamType.PlainText);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            school_info_textbox.LoadFile(".//resources//maritime.txt", RichTextBoxStreamType.PlainText);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            school_info_textbox.LoadFile(".//resources//finance.txt", RichTextBoxStreamType.PlainText);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            school_info_textbox.LoadFile(".//resources//computerscience.txt", RichTextBoxStreamType.PlainText);
+        }
     }
 }
