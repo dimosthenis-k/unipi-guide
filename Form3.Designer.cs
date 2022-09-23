@@ -79,20 +79,20 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(95, 22);
             this.exitToolStripMenuItem.Text = "Info";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem1
             // 
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(95, 22);
             this.exitToolStripMenuItem1.Text = "Exit";
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // slideshow_timer
             // 
-            this.slideshow_timer.Interval = 3000;
+            this.slideshow_timer.Interval = 2500;
             this.slideshow_timer.Tick += new System.EventHandler(this.slideshow_timer_Tick);
             // 
             // welcome_label
@@ -109,7 +109,7 @@
             // 
             this.main_menu_label.AutoSize = true;
             this.main_menu_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.main_menu_label.Location = new System.Drawing.Point(155, 140);
+            this.main_menu_label.Location = new System.Drawing.Point(150, 111);
             this.main_menu_label.Name = "main_menu_label";
             this.main_menu_label.Size = new System.Drawing.Size(133, 18);
             this.main_menu_label.TabIndex = 4;
@@ -118,7 +118,7 @@
             // 
             // university_section_button
             // 
-            this.university_section_button.Location = new System.Drawing.Point(172, 179);
+            this.university_section_button.Location = new System.Drawing.Point(167, 150);
             this.university_section_button.Name = "university_section_button";
             this.university_section_button.Size = new System.Drawing.Size(90, 36);
             this.university_section_button.TabIndex = 5;
@@ -127,7 +127,7 @@
             // 
             // schools_section_button
             // 
-            this.schools_section_button.Location = new System.Drawing.Point(172, 232);
+            this.schools_section_button.Location = new System.Drawing.Point(167, 203);
             this.schools_section_button.Name = "schools_section_button";
             this.schools_section_button.Size = new System.Drawing.Size(90, 36);
             this.schools_section_button.TabIndex = 6;
@@ -137,7 +137,7 @@
             // 
             // services_section_button
             // 
-            this.services_section_button.Location = new System.Drawing.Point(172, 284);
+            this.services_section_button.Location = new System.Drawing.Point(167, 255);
             this.services_section_button.Name = "services_section_button";
             this.services_section_button.Size = new System.Drawing.Size(90, 36);
             this.services_section_button.TabIndex = 7;
@@ -146,7 +146,7 @@
             // 
             // contact_section_button
             // 
-            this.contact_section_button.Location = new System.Drawing.Point(172, 388);
+            this.contact_section_button.Location = new System.Drawing.Point(167, 359);
             this.contact_section_button.Name = "contact_section_button";
             this.contact_section_button.Size = new System.Drawing.Size(90, 37);
             this.contact_section_button.TabIndex = 8;
@@ -155,7 +155,7 @@
             // 
             // calendar_section_button
             // 
-            this.calendar_section_button.Location = new System.Drawing.Point(172, 336);
+            this.calendar_section_button.Location = new System.Drawing.Point(167, 307);
             this.calendar_section_button.Name = "calendar_section_button";
             this.calendar_section_button.Size = new System.Drawing.Size(90, 37);
             this.calendar_section_button.TabIndex = 9;
