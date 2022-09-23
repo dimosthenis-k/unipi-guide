@@ -60,6 +60,10 @@ namespace unipi_tour_guide
 
             calendar_section_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
             calendar_section_button.BackColor = ColorTranslator.FromHtml("#A22631");
+
+            ratings_section_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
+            ratings_section_button.BackColor = ColorTranslator.FromHtml("#A22631");
+
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)

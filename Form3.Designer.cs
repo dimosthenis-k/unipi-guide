@@ -43,6 +43,7 @@
             this.services_section_button = new System.Windows.Forms.Button();
             this.contact_section_button = new System.Windows.Forms.Button();
             this.calendar_section_button = new System.Windows.Forms.Button();
+            this.ratings_section_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.slideshow_picturebox)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -109,7 +110,7 @@
             // 
             this.main_menu_label.AutoSize = true;
             this.main_menu_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.main_menu_label.Location = new System.Drawing.Point(150, 111);
+            this.main_menu_label.Location = new System.Drawing.Point(132, 146);
             this.main_menu_label.Name = "main_menu_label";
             this.main_menu_label.Size = new System.Drawing.Size(133, 18);
             this.main_menu_label.TabIndex = 4;
@@ -118,7 +119,7 @@
             // 
             // university_section_button
             // 
-            this.university_section_button.Location = new System.Drawing.Point(167, 150);
+            this.university_section_button.Location = new System.Drawing.Point(103, 197);
             this.university_section_button.Name = "university_section_button";
             this.university_section_button.Size = new System.Drawing.Size(90, 36);
             this.university_section_button.TabIndex = 5;
@@ -127,7 +128,7 @@
             // 
             // schools_section_button
             // 
-            this.schools_section_button.Location = new System.Drawing.Point(167, 203);
+            this.schools_section_button.Location = new System.Drawing.Point(103, 255);
             this.schools_section_button.Name = "schools_section_button";
             this.schools_section_button.Size = new System.Drawing.Size(90, 36);
             this.schools_section_button.TabIndex = 6;
@@ -137,7 +138,7 @@
             // 
             // services_section_button
             // 
-            this.services_section_button.Location = new System.Drawing.Point(167, 255);
+            this.services_section_button.Location = new System.Drawing.Point(103, 316);
             this.services_section_button.Name = "services_section_button";
             this.services_section_button.Size = new System.Drawing.Size(90, 36);
             this.services_section_button.TabIndex = 7;
@@ -146,7 +147,7 @@
             // 
             // contact_section_button
             // 
-            this.contact_section_button.Location = new System.Drawing.Point(167, 359);
+            this.contact_section_button.Location = new System.Drawing.Point(227, 254);
             this.contact_section_button.Name = "contact_section_button";
             this.contact_section_button.Size = new System.Drawing.Size(90, 37);
             this.contact_section_button.TabIndex = 8;
@@ -155,18 +156,28 @@
             // 
             // calendar_section_button
             // 
-            this.calendar_section_button.Location = new System.Drawing.Point(167, 307);
+            this.calendar_section_button.Location = new System.Drawing.Point(227, 197);
             this.calendar_section_button.Name = "calendar_section_button";
             this.calendar_section_button.Size = new System.Drawing.Size(90, 37);
             this.calendar_section_button.TabIndex = 9;
             this.calendar_section_button.Text = "Ημερολόγιο";
             this.calendar_section_button.UseVisualStyleBackColor = true;
             // 
+            // ratings_section_button
+            // 
+            this.ratings_section_button.Location = new System.Drawing.Point(227, 315);
+            this.ratings_section_button.Name = "ratings_section_button";
+            this.ratings_section_button.Size = new System.Drawing.Size(90, 37);
+            this.ratings_section_button.TabIndex = 10;
+            this.ratings_section_button.Text = "Σχόλια Χρηστών";
+            this.ratings_section_button.UseVisualStyleBackColor = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ratings_section_button);
             this.Controls.Add(this.calendar_section_button);
             this.Controls.Add(this.contact_section_button);
             this.Controls.Add(this.services_section_button);
@@ -204,5 +215,6 @@
         private System.Windows.Forms.Button services_section_button;
         private System.Windows.Forms.Button contact_section_button;
         private System.Windows.Forms.Button calendar_section_button;
+        private System.Windows.Forms.Button ratings_section_button;
     }
 }
