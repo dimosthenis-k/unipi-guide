@@ -15,12 +15,7 @@ namespace unipi_tour_guide
 {
     public partial class form1 : Form
     {
-        IFirebaseConfig config = new FirebaseConfig
-        {
-            AuthSecret = "QvMEsNlahcsEFs7gkiWRlfeqU3kSrALWXIG5U6qy",
-            BasePath = "https://console.firebase.google.com/u/0/project/unipy-tour-guide/database/unipy-tour-guide-default-rtdb/data/~2F"
-        };
-        IFirebaseClient client;
+       
 
         public form1()
         {
@@ -48,12 +43,6 @@ namespace unipi_tour_guide
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            client = new FireSharp.FirebaseClient(config);
-
-            if(client!=null)
-            {
-                MessageBox.Show("Connection is established");
-            }
         }
 
         private void label1_Click(object sender, EventArgs e)
