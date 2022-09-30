@@ -51,7 +51,7 @@
             // slideshow_picturebox
             // 
             this.slideshow_picturebox.Location = new System.Drawing.Point(701, 180);
-            this.slideshow_picturebox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.slideshow_picturebox.Margin = new System.Windows.Forms.Padding(4);
             this.slideshow_picturebox.Name = "slideshow_picturebox";
             this.slideshow_picturebox.Size = new System.Drawing.Size(332, 279);
             this.slideshow_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -124,17 +124,18 @@
             // university_section_button
             // 
             this.university_section_button.Location = new System.Drawing.Point(137, 242);
-            this.university_section_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.university_section_button.Margin = new System.Windows.Forms.Padding(4);
             this.university_section_button.Name = "university_section_button";
             this.university_section_button.Size = new System.Drawing.Size(120, 44);
             this.university_section_button.TabIndex = 5;
             this.university_section_button.Text = "Πανεπιστήμιο";
             this.university_section_button.UseVisualStyleBackColor = true;
+            this.university_section_button.Click += new System.EventHandler(this.university_section_button_Click);
             // 
             // schools_section_button
             // 
             this.schools_section_button.Location = new System.Drawing.Point(137, 314);
-            this.schools_section_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.schools_section_button.Margin = new System.Windows.Forms.Padding(4);
             this.schools_section_button.Name = "schools_section_button";
             this.schools_section_button.Size = new System.Drawing.Size(120, 44);
             this.schools_section_button.TabIndex = 6;
@@ -145,7 +146,7 @@
             // services_section_button
             // 
             this.services_section_button.Location = new System.Drawing.Point(137, 389);
-            this.services_section_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.services_section_button.Margin = new System.Windows.Forms.Padding(4);
             this.services_section_button.Name = "services_section_button";
             this.services_section_button.Size = new System.Drawing.Size(120, 44);
             this.services_section_button.TabIndex = 7;
@@ -155,7 +156,7 @@
             // contact_section_button
             // 
             this.contact_section_button.Location = new System.Drawing.Point(303, 313);
-            this.contact_section_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.contact_section_button.Margin = new System.Windows.Forms.Padding(4);
             this.contact_section_button.Name = "contact_section_button";
             this.contact_section_button.Size = new System.Drawing.Size(120, 46);
             this.contact_section_button.TabIndex = 8;
@@ -165,7 +166,7 @@
             // calendar_section_button
             // 
             this.calendar_section_button.Location = new System.Drawing.Point(303, 242);
-            this.calendar_section_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calendar_section_button.Margin = new System.Windows.Forms.Padding(4);
             this.calendar_section_button.Name = "calendar_section_button";
             this.calendar_section_button.Size = new System.Drawing.Size(120, 46);
             this.calendar_section_button.TabIndex = 9;
@@ -176,7 +177,7 @@
             // ratings_section_button
             // 
             this.ratings_section_button.Location = new System.Drawing.Point(303, 388);
-            this.ratings_section_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ratings_section_button.Margin = new System.Windows.Forms.Padding(4);
             this.ratings_section_button.Name = "ratings_section_button";
             this.ratings_section_button.Size = new System.Drawing.Size(120, 46);
             this.ratings_section_button.TabIndex = 10;
@@ -200,7 +201,7 @@
             this.Controls.Add(this.slideshow_picturebox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Unipi Guide - Welcome";

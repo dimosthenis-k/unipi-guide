@@ -104,5 +104,11 @@ namespace unipi_tour_guide
             calendarForm calendar = new calendarForm();
             calendar.Show();
         }
+
+        private void university_section_button_Click(object sender, EventArgs e)
+        {
+            UniversityInfoForm info = new UniversityInfoForm();
+            info.Show();
+        }
     }
 }
