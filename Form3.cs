@@ -115,5 +115,11 @@ namespace unipi_tour_guide
         {
 
         }
+
+        private void contact_section_button_Click(object sender, EventArgs e)
+        {
+            ContactForm contact = new ContactForm();
+            contact.Show();
+        }
     }
 }

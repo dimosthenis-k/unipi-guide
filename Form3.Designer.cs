@@ -113,7 +113,7 @@
             // 
             this.main_menu_label.AutoSize = true;
             this.main_menu_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.main_menu_label.Location = new System.Drawing.Point(176, 180);
+            this.main_menu_label.Location = new System.Drawing.Point(189, 180);
             this.main_menu_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.main_menu_label.Name = "main_menu_label";
             this.main_menu_label.Size = new System.Drawing.Size(172, 24);
@@ -162,6 +162,7 @@
             this.contact_section_button.TabIndex = 8;
             this.contact_section_button.Text = "Επικοινωνία";
             this.contact_section_button.UseVisualStyleBackColor = true;
+            this.contact_section_button.Click += new System.EventHandler(this.contact_section_button_Click);
             // 
             // calendar_section_button
             // 
