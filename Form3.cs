@@ -98,5 +98,28 @@ namespace unipi_tour_guide
             SchoolsForm schools = new SchoolsForm();
             schools.Show();
         }
+
+        private void calendar_section_button_Click(object sender, EventArgs e)
+        {
+            calendarForm calendar = new calendarForm();
+            calendar.Show();
+        }
+
+        private void university_section_button_Click(object sender, EventArgs e)
+        {
+            UniversityInfoForm info = new UniversityInfoForm();
+            info.Show();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contact_section_button_Click(object sender, EventArgs e)
+        {
+            ContactForm contact = new ContactForm();
+            contact.Show();
+        }
     }
 }
