@@ -17,7 +17,7 @@ namespace unipi_tour_guide
             InitializeComponent();
 
             //setting save icon hover text
-            new ToolTip().SetToolTip(saveiconpb, "Αποθήκευση πληροφοριών σε αρχείο txt");
+            new ToolTip().SetToolTip(saveiconpb, "Αποθήκευση πληροφοριών");
 
         }
 
