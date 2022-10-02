@@ -14,7 +14,8 @@ namespace unipi_tour_guide
     public partial class Form2 : Form
     {
         string path = "data_table.db";
-        string cs = @"URI=file" + Application.StartupPath + "\\data_table.db";
+        //string cs = @"URI=file" + Application.StartupPath + "\\data_table.db";
+        string cs = "Data source=data_table.db;Version=3";
 
         SQLiteConnection con;
         SQLiteCommand cmd;
@@ -66,6 +67,42 @@ namespace unipi_tour_guide
             Create_db();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            var con = new SQLiteConnection(cs);
+            con.Open();
+            var cmd = new SQLiteCommand(con);
+
+            try
+            {
+                cmd.CommandText = "INSERT INTO test(username,email,password) VALUES(@username,@email,@password)";
+
+                string USERNAME = textBox1.Text;
+                string EMAIL = textBox2.Text;
+                string PASSWORD = textBox3.Text;
+
+
+                cmd.Parameters.AddWithValue("@username", USERNAME);
+                cmd.Parameters.AddWithValue("@email", EMAIL);
+                cmd.Parameters.AddWithValue("@password", PASSWORD);
+
+                dataGridView1.ColumnCount = 3;
+                dataGridView1.Columns[0].Name = "Username";
+                dataGridView1.Columns[1].Name = "Email";
+                dataGridView1.Columns[2].Name = "Password";
+                string[] row = new string[] { USERNAME, EMAIL,PASSWORD };
+                dataGridView1.Rows.Add(row);
+
+                cmd.ExecuteNonQuery();
+
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("cannot insert data");
+                return;
+            }
+        }
     }
 }
 
