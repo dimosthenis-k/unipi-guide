@@ -103,6 +103,23 @@ namespace unipi_tour_guide
                 return;
             }
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+            {
+                DialogResult res;
+                res = MessageBox.Show("Θέλεις να αποχωρήσεις;", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (res == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+                else
+                {
+                    this.Show();
+                }
+            }
+        }
     }
 }
 

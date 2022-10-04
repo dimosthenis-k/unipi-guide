@@ -105,5 +105,24 @@ namespace unipi_tour_guide
             }
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult res;
+            res = MessageBox.Show("Θέλεις να αποχωρήσεις;", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res==DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                this.Show();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Δημοσθένης Καραμπίνας-Ιάσονας Σιμώτας");
+        }
     }
 }

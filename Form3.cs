@@ -121,5 +121,21 @@ namespace unipi_tour_guide
             ContactForm contact = new ContactForm();
             contact.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+                DialogResult res;
+                res = MessageBox.Show("Θέλεις να αποχωρήσεις;", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (res == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+                else
+                {
+                    this.Show();
+                }
+            
+        }
     }
 }

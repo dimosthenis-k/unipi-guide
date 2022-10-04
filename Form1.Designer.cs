@@ -37,6 +37,8 @@
             this.login_button = new System.Windows.Forms.Button();
             this.signup_label = new System.Windows.Forms.LinkLabel();
             this.banner_picturebox = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.banner_picturebox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,11 +129,33 @@
             this.banner_picturebox.TabStop = false;
             this.banner_picturebox.Click += new System.EventHandler(this.banner_picturebox_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(159, 362);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "EXIT";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(13, 424);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Authors";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(383, 459);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.banner_picturebox);
             this.Controls.Add(this.signup_label);
             this.Controls.Add(this.login_button);
@@ -161,6 +185,8 @@
         private System.Windows.Forms.Button login_button;
         private System.Windows.Forms.LinkLabel signup_label;
         private System.Windows.Forms.PictureBox banner_picturebox;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
