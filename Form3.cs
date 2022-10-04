@@ -137,5 +137,10 @@ namespace unipi_tour_guide
                 }
             
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Δημοσθένης Καραμπίνας-Ιάσονας Σιμώτας");
+        }
     }
 }
