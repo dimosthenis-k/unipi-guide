@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SQLite;
 
 namespace unipi_tour_guide
 {
@@ -72,8 +72,38 @@ namespace unipi_tour_guide
             mainMenu.Show();
             
         }
+        SQLiteConnection conn = new SQLiteConnection("Data source=data_table.db;Version=3");
+        private void login_button_Click(object sender, EventArgs e)
+        {
+           if (username_textbox.Text.Trim()=="" && password_textbox.Text.Trim()=="")
+            {
+                MessageBox.Show("Empty Fields", "Error");
+            }
+           else
+            {
+                string query = "SELECT * FROM test WHERE username=@username_textbox AND password=@password_textbox";
+                SQLiteConnection conn = new SQLiteConnection("Data source=data_table.db;Version=3");
+                conn.Open();
+                SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                cmd.Parameters.AddWithValue("@username_textbox", username_textbox.Text);
+                cmd.Parameters.AddWithValue("@password_textbox",password_textbox.Text);
+                SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
 
-        
+                if (dt.Rows.Count>0)
+                {
+                    MessageBox.Show("You are Logged in", "Login Successfull");
+                    Form3 mainMenu = new Form3();
+                    mainMenu.Show();
 
+                }
+                else
+                {
+                    MessageBox.Show("Login Failed","Error");
+                }
+            }
+
+        }
     }
 }
