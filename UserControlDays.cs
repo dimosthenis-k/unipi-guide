@@ -25,5 +25,10 @@ namespace unipi_tour_guide
         {
             lbdays.Text = numday+"";
         }
+
+        private void lbdays_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

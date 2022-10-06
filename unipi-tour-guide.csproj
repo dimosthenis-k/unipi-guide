@@ -138,6 +138,12 @@
     <Compile Include="UniversityInfoForm.Designer.cs">
       <DependentUpon>UniversityInfoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlBlank.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UniversityInfoForm.resx">
       <DependentUpon>UniversityInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlBlank.resx">
       <DependentUpon>UserControlBlank.cs</DependentUpon>

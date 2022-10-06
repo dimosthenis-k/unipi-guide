@@ -35,20 +35,23 @@
             // 
             this.lbdays.AutoSize = true;
             this.lbdays.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbdays.Location = new System.Drawing.Point(3, 9);
+            this.lbdays.Location = new System.Drawing.Point(35, 25);
+            this.lbdays.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbdays.Name = "lbdays";
-            this.lbdays.Size = new System.Drawing.Size(32, 22);
+            this.lbdays.Size = new System.Drawing.Size(26, 18);
             this.lbdays.TabIndex = 0;
             this.lbdays.Text = "00";
+            this.lbdays.Click += new System.EventHandler(this.lbdays_Click);
             // 
             // UserControlDays
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lbdays);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControlDays";
-            this.Size = new System.Drawing.Size(157, 92);
+            this.Size = new System.Drawing.Size(101, 64);
             this.Load += new System.EventHandler(this.UserControlDays_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,6 +1,7 @@
-﻿namespace unipi_tour_guide
+﻿
+namespace unipi_tour_guide
 {
-    partial class UserControlBlank
+    partial class UserControl1
     {
         /// <summary> 
         /// Required designer variable.
@@ -34,20 +35,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 24);
+            this.label1.Location = new System.Drawing.Point(3, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Temporary Text";
             // 
-            // UserControlBlank
+            // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "UserControlBlank";
-            this.Size = new System.Drawing.Size(118, 75);
+            this.Name = "UserControl1";
+            this.Size = new System.Drawing.Size(100, 55);
             this.ResumeLayout(false);
             this.PerformLayout();
 
