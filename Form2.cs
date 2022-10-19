@@ -64,6 +64,14 @@ namespace unipi_tour_guide
         private void Form2_Load(object sender, EventArgs e)
 
         {
+            // setting form colors on load
+            this.BackColor = ColorTranslator.FromHtml("#222C54");
+
+            // label colors
+            this.name_label.ForeColor = ColorTranslator.FromHtml("#A22631");
+            this.password_label.ForeColor = ColorTranslator.FromHtml("#A22631");
+            this.email_label.ForeColor = ColorTranslator.FromHtml("#A22631");
+
             Create_db();
         }
 
