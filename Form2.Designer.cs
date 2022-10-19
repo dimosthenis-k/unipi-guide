@@ -138,11 +138,13 @@ namespace unipi_tour_guide
             // 
             // signup_picturebox
             // 
-            this.signup_picturebox.Location = new System.Drawing.Point(255, 43);
+            this.signup_picturebox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.signup_picturebox.Location = new System.Drawing.Point(214, 43);
             this.signup_picturebox.Name = "signup_picturebox";
-            this.signup_picturebox.Size = new System.Drawing.Size(104, 94);
+            this.signup_picturebox.Size = new System.Drawing.Size(145, 145);
             this.signup_picturebox.TabIndex = 9;
             this.signup_picturebox.TabStop = false;
+            this.signup_picturebox.Click += new System.EventHandler(this.signup_picturebox_Click);
             // 
             // Form2
             // 

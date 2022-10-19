@@ -72,6 +72,9 @@ namespace unipi_tour_guide
             this.password_label.ForeColor = ColorTranslator.FromHtml("#A22631");
             this.email_label.ForeColor = ColorTranslator.FromHtml("#A22631");
 
+            // picturebox
+            this.signup_picturebox.Image = Image.FromFile(@"resources/unipi-logo.png");
+
             Create_db();
         }
 
@@ -132,6 +135,11 @@ namespace unipi_tour_guide
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Δημοσθένης Καραμπίνας-Ιάσονας Σιμώτας");
+        }
+
+        private void signup_picturebox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
