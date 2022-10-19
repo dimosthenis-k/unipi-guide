@@ -60,7 +60,7 @@ namespace unipi_tour_guide
             SignUp.Show();
 
             // disabling sign up labeling after clicking | prevents multiple sign up forms from appearing
-            signup_label.Enabled = false; 
+            //signup_label.Enabled = false; 
         }
 
         private void no_account_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -93,7 +93,7 @@ namespace unipi_tour_guide
 
                 if (dt.Rows.Count>0)
                 {
-                    MessageBox.Show("You are Logged in", "Login Successfull");
+                    MessageBox.Show("You are Logged in", "Login Successful");
                     Form3 mainMenu = new Form3();
                     mainMenu.Show();
 
