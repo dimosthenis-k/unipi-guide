@@ -113,7 +113,7 @@ namespace unipi_tour_guide
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void contact_section_button_Click(object sender, EventArgs e)

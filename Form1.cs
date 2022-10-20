@@ -13,7 +13,7 @@ namespace unipi_tour_guide
 {
     public partial class form1 : Form
     {
-       
+
 
         public form1()
         {
@@ -55,7 +55,7 @@ namespace unipi_tour_guide
 
         private void signup_label_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           
+
             Form2 SignUp = new Form2();
             SignUp.Show();
 
@@ -65,8 +65,12 @@ namespace unipi_tour_guide
 
         private void no_account_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            // public boolean to check if user is logged in from other forms
+            bool isUserLoggedIn = false;
+
             // displaying guest user limitations notification
             MessageBox.Show("Σημαντικό: Μερικές από τις λειτουργίες της εφαρμογής δεν θα είναι διαθέσιμες αν συνεχίσετε ως επισκέπτης.");
+
 
             Form3 mainMenu = new Form3();
             mainMenu.Show();
