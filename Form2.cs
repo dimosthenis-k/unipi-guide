@@ -107,10 +107,13 @@ namespace unipi_tour_guide
 
                 cmd.ExecuteNonQuery();
 
+                // displaying singup completion
+                MessageBox.Show("Επιτυχής Εγγραφή");
+
             }
             catch (Exception)
             {
-                Console.WriteLine("cannot insert data");
+                Console.WriteLine("Αποτυχία Εγγραφής");
                 return;
             }
         }

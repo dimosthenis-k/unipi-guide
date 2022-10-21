@@ -117,7 +117,7 @@ namespace unipi_tour_guide
             if (!form1.getUserStatus())
             {
                 services_section_button.Enabled = false;
-                ratings_section_button.Enabled=false;
+                ratings_section_button.Enabled = false;
             }
         }
 
