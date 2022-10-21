@@ -13,6 +13,7 @@ namespace unipi_tour_guide
     public partial class Form3 : Form
     {
 
+
         private int imageNumber = 1;
 
         // function that swaps slideshow picturebox pictures
@@ -113,7 +114,11 @@ namespace unipi_tour_guide
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            
+            if (!form1.getUserStatus())
+            {
+                services_section_button.Enabled = false;
+                ratings_section_button.Enabled=false;
+            }
         }
 
         private void contact_section_button_Click(object sender, EventArgs e)

@@ -15,6 +15,19 @@ namespace unipi_tour_guide
     {
 
 
+        // public bool to check user login
+        public static bool isUserLoggedIn = false;
+        
+        public static bool getUserStatus()
+        {
+            return isUserLoggedIn;
+        }
+
+        public static void setUserStatus(bool status)
+        {
+            isUserLoggedIn = status;
+        }
+
         public form1()
         {
 
@@ -99,6 +112,7 @@ namespace unipi_tour_guide
                 {
                     MessageBox.Show("You are Logged in", "Login Successful");
                     Form3 mainMenu = new Form3();
+                    isUserLoggedIn = true;
                     mainMenu.Show();
 
                 }
