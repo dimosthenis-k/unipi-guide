@@ -176,6 +176,7 @@
             this.ratings_section_button.TabIndex = 10;
             this.ratings_section_button.Text = "Σχόλια Χρηστών";
             this.ratings_section_button.UseVisualStyleBackColor = true;
+            this.ratings_section_button.Click += new System.EventHandler(this.ratings_section_button_Click);
             // 
             // Form3
             // 
