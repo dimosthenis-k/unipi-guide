@@ -94,7 +94,7 @@ namespace unipi_tour_guide
         {
            if (username_textbox.Text.Trim()=="" && password_textbox.Text.Trim()=="")
             {
-                MessageBox.Show("Empty Fields", "Error");
+                MessageBox.Show("Παρακαλώ συμπληρώστε όλα τα πεδία.");
             }
            else
             {
@@ -110,7 +110,7 @@ namespace unipi_tour_guide
 
                 if (dt.Rows.Count>0)
                 {
-                    MessageBox.Show("You are Logged in", "Login Successful");
+                    MessageBox.Show("Επιτυχής Είσοδος.");
                     Form3 mainMenu = new Form3();
                     isUserLoggedIn = true;
                     mainMenu.Show();
@@ -118,7 +118,7 @@ namespace unipi_tour_guide
                 }
                 else
                 {
-                    MessageBox.Show("Login Failed","Error");
+                    MessageBox.Show("Αποτυχία Πιστοποίησης.");
                 }
             }
 
