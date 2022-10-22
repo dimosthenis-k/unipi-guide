@@ -34,20 +34,22 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.contact_info_textbox = new System.Windows.Forms.RichTextBox();
+            this.info_sfd = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.saveiconpb)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // saveiconpb
             // 
-            this.saveiconpb.Location = new System.Drawing.Point(606, 373);
+            this.saveiconpb.Location = new System.Drawing.Point(603, 371);
             this.saveiconpb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.saveiconpb.Name = "saveiconpb";
             this.saveiconpb.Size = new System.Drawing.Size(38, 40);
             this.saveiconpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.saveiconpb.TabIndex = 0;
             this.saveiconpb.TabStop = false;
+            this.saveiconpb.Click += new System.EventHandler(this.saveiconpb_Click);
             // 
             // menuStrip1
             // 
@@ -82,21 +84,22 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // richTextBox1
+            // contact_info_textbox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 43);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(488, 320);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.contact_info_textbox.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.contact_info_textbox.Location = new System.Drawing.Point(30, 93);
+            this.contact_info_textbox.Name = "contact_info_textbox";
+            this.contact_info_textbox.Size = new System.Drawing.Size(488, 320);
+            this.contact_info_textbox.TabIndex = 2;
+            this.contact_info_textbox.Text = "";
+            this.contact_info_textbox.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // ContactForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 422);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.contact_info_textbox);
             this.Controls.Add(this.saveiconpb);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -120,6 +123,7 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox contact_info_textbox;
+        private System.Windows.Forms.SaveFileDialog info_sfd;
     }
 }
