@@ -42,6 +42,7 @@ namespace unipi_tour_guide
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.preview_comments_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -49,17 +50,18 @@ namespace unipi_tour_guide
             // comment_label
             // 
             this.comment_label.AutoSize = true;
-            this.comment_label.Location = new System.Drawing.Point(44, 130);
+            this.comment_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.comment_label.Location = new System.Drawing.Point(41, 124);
             this.comment_label.Name = "comment_label";
-            this.comment_label.Size = new System.Drawing.Size(40, 13);
+            this.comment_label.Size = new System.Drawing.Size(64, 20);
             this.comment_label.TabIndex = 0;
             this.comment_label.Text = "Σχόλιο";
             // 
             // submit_comment_button
             // 
-            this.submit_comment_button.Location = new System.Drawing.Point(28, 196);
+            this.submit_comment_button.Location = new System.Drawing.Point(30, 185);
             this.submit_comment_button.Name = "submit_comment_button";
-            this.submit_comment_button.Size = new System.Drawing.Size(75, 23);
+            this.submit_comment_button.Size = new System.Drawing.Size(84, 23);
             this.submit_comment_button.TabIndex = 1;
             this.submit_comment_button.Text = "Υποβολή";
             this.submit_comment_button.UseVisualStyleBackColor = true;
@@ -71,7 +73,7 @@ namespace unipi_tour_guide
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.username,
             this.comment});
-            this.dataGridView1.Location = new System.Drawing.Point(434, 288);
+            this.dataGridView1.Location = new System.Drawing.Point(421, 88);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(354, 150);
             this.dataGridView1.TabIndex = 2;
@@ -88,24 +90,25 @@ namespace unipi_tour_guide
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 74);
+            this.textBox1.Location = new System.Drawing.Point(16, 71);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(112, 20);
             this.textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 146);
+            this.textBox2.Location = new System.Drawing.Point(16, 147);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(112, 20);
             this.textBox2.TabIndex = 4;
             // 
             // username_comments_label
             // 
             this.username_comments_label.AutoSize = true;
-            this.username_comments_label.Location = new System.Drawing.Point(21, 58);
+            this.username_comments_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.username_comments_label.Location = new System.Drawing.Point(12, 48);
             this.username_comments_label.Name = "username_comments_label";
-            this.username_comments_label.Size = new System.Drawing.Size(82, 13);
+            this.username_comments_label.Size = new System.Drawing.Size(128, 20);
             this.username_comments_label.TabIndex = 5;
             this.username_comments_label.Text = "Όνομα Χρήστη";
             // 
@@ -142,11 +145,22 @@ namespace unipi_tour_guide
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // preview_comments_label
+            // 
+            this.preview_comments_label.AutoSize = true;
+            this.preview_comments_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.preview_comments_label.Location = new System.Drawing.Point(501, 48);
+            this.preview_comments_label.Name = "preview_comments_label";
+            this.preview_comments_label.Size = new System.Drawing.Size(203, 20);
+            this.preview_comments_label.TabIndex = 7;
+            this.preview_comments_label.Text = "Προεπισκόπηση Σχολίων";
+            // 
             // Comments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.preview_comments_label);
             this.Controls.Add(this.username_comments_label);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -181,5 +195,6 @@ namespace unipi_tour_guide
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Label preview_comments_label;
     }
 }

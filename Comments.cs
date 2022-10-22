@@ -30,6 +30,11 @@ namespace unipi_tour_guide
             this.submit_comment_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
             this.submit_comment_button.BackColor = ColorTranslator.FromHtml("#A22631");
 
+            //label colors
+            this.username_comments_label.ForeColor = ColorTranslator.FromHtml("#A22631");
+            this.comment_label.ForeColor = ColorTranslator.FromHtml("#A22631");
+            this.preview_comments_label.ForeColor = ColorTranslator.FromHtml("#A22631");
+
 
         }
         private void data_show()
