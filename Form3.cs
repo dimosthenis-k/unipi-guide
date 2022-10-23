@@ -53,9 +53,6 @@ namespace unipi_tour_guide
             schools_section_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
             schools_section_button.BackColor = ColorTranslator.FromHtml("#A22631");
 
-            services_section_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
-            services_section_button.BackColor = ColorTranslator.FromHtml("#A22631");
-
             contact_section_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
             contact_section_button.BackColor = ColorTranslator.FromHtml("#A22631");
 
@@ -116,7 +113,6 @@ namespace unipi_tour_guide
         {
             if (!form1.getUserStatus())
             {
-                services_section_button.Enabled = false;
                 ratings_section_button.Enabled = false;
             }
         }

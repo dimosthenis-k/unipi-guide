@@ -40,7 +40,6 @@
             this.main_menu_label = new System.Windows.Forms.Label();
             this.university_section_button = new System.Windows.Forms.Button();
             this.schools_section_button = new System.Windows.Forms.Button();
-            this.services_section_button = new System.Windows.Forms.Button();
             this.contact_section_button = new System.Windows.Forms.Button();
             this.calendar_section_button = new System.Windows.Forms.Button();
             this.ratings_section_button = new System.Windows.Forms.Button();
@@ -82,14 +81,14 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(95, 22);
             this.exitToolStripMenuItem.Text = "Info";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem1
             // 
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(95, 22);
             this.exitToolStripMenuItem1.Text = "Exit";
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
@@ -139,15 +138,6 @@
             this.schools_section_button.UseVisualStyleBackColor = true;
             this.schools_section_button.Click += new System.EventHandler(this.schools_section_button_Click);
             // 
-            // services_section_button
-            // 
-            this.services_section_button.Location = new System.Drawing.Point(103, 316);
-            this.services_section_button.Name = "services_section_button";
-            this.services_section_button.Size = new System.Drawing.Size(90, 36);
-            this.services_section_button.TabIndex = 7;
-            this.services_section_button.Text = "Παροχές";
-            this.services_section_button.UseVisualStyleBackColor = true;
-            // 
             // contact_section_button
             // 
             this.contact_section_button.Location = new System.Drawing.Point(227, 254);
@@ -170,9 +160,9 @@
             // 
             // ratings_section_button
             // 
-            this.ratings_section_button.Location = new System.Drawing.Point(227, 315);
+            this.ratings_section_button.Location = new System.Drawing.Point(103, 315);
             this.ratings_section_button.Name = "ratings_section_button";
-            this.ratings_section_button.Size = new System.Drawing.Size(90, 37);
+            this.ratings_section_button.Size = new System.Drawing.Size(214, 37);
             this.ratings_section_button.TabIndex = 10;
             this.ratings_section_button.Text = "Σχόλια Χρηστών";
             this.ratings_section_button.UseVisualStyleBackColor = true;
@@ -186,7 +176,6 @@
             this.Controls.Add(this.ratings_section_button);
             this.Controls.Add(this.calendar_section_button);
             this.Controls.Add(this.contact_section_button);
-            this.Controls.Add(this.services_section_button);
             this.Controls.Add(this.schools_section_button);
             this.Controls.Add(this.university_section_button);
             this.Controls.Add(this.main_menu_label);
@@ -219,7 +208,6 @@
         private System.Windows.Forms.Label main_menu_label;
         private System.Windows.Forms.Button university_section_button;
         private System.Windows.Forms.Button schools_section_button;
-        private System.Windows.Forms.Button services_section_button;
         private System.Windows.Forms.Button contact_section_button;
         private System.Windows.Forms.Button calendar_section_button;
         private System.Windows.Forms.Button ratings_section_button;
