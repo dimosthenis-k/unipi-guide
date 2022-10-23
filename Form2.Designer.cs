@@ -43,19 +43,24 @@ namespace unipi_tour_guide
             this.password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.signup_picturebox = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.signup_picturebox)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // name_label
             // 
             this.name_label.AutoSize = true;
             this.name_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.name_label.Location = new System.Drawing.Point(26, 20);
+            this.name_label.Location = new System.Drawing.Point(9, 20);
             this.name_label.Name = "name_label";
-            this.name_label.Size = new System.Drawing.Size(91, 20);
+            this.name_label.Size = new System.Drawing.Size(128, 20);
             this.name_label.TabIndex = 0;
-            this.name_label.Text = "Username";
+            this.name_label.Text = "Όνομα Χρήστη";
             // 
             // email_label
             // 
@@ -73,9 +78,9 @@ namespace unipi_tour_guide
             this.password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.password_label.Location = new System.Drawing.Point(31, 168);
             this.password_label.Name = "password_label";
-            this.password_label.Size = new System.Drawing.Size(86, 20);
+            this.password_label.Size = new System.Drawing.Size(74, 20);
             this.password_label.TabIndex = 2;
-            this.password_label.Text = "Password";
+            this.password_label.Text = "Κωδικός";
             // 
             // textBox1
             // 
@@ -132,7 +137,7 @@ namespace unipi_tour_guide
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(77, 23);
             this.button2.TabIndex = 8;
-            this.button2.Text = "Register";
+            this.button2.Text = "Εγγραφή";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -145,6 +150,39 @@ namespace unipi_tour_guide
             this.signup_picturebox.TabIndex = 9;
             this.signup_picturebox.TabStop = false;
             this.signup_picturebox.Click += new System.EventHandler(this.signup_picturebox_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(371, 24);
+            this.menuStrip1.TabIndex = 10;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.infoToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
+            // infoToolStripMenuItem
+            // 
+            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.infoToolStripMenuItem.Text = "Info";
+            this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // Form2
             // 
@@ -160,13 +198,17 @@ namespace unipi_tour_guide
             this.Controls.Add(this.password_label);
             this.Controls.Add(this.email_label);
             this.Controls.Add(this.name_label);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign Up";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.signup_picturebox)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,5 +233,9 @@ namespace unipi_tour_guide
         private System.Windows.Forms.DataGridViewTextBoxColumn password;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox signup_picturebox;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
