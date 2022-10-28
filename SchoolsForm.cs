@@ -54,5 +54,21 @@ namespace unipi_tour_guide
         {
             school_info_textbox.LoadFile(".//resources//computerscience.txt", RichTextBoxStreamType.PlainText);
         }
+
+        private void aboiutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // displaying about info
+            MessageBox.Show("Developed by: Karampinas Dimosthenis & Simotas Iasonas as part of Rapid Application Development Course :)");
+        }
     }
 }

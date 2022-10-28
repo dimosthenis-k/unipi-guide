@@ -13,6 +13,7 @@ namespace unipi_tour_guide
 {
     public partial class Comments : Form
     {
+
         string path = "data_table_2.db";
         //string cs = @"URI=file" + Application.StartupPath + "\\data_table_2.db";
         string cs = "Data source=data_table.db;Version=3";
@@ -23,6 +24,18 @@ namespace unipi_tour_guide
         public Comments()
         {
             InitializeComponent();
+
+            // comments form colors
+            this.BackColor = ColorTranslator.FromHtml("#222C54");
+            this.submit_comment_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
+            this.submit_comment_button.BackColor = ColorTranslator.FromHtml("#A22631");
+
+            //label colors
+            this.username_comments_label.ForeColor = ColorTranslator.FromHtml("#A22631");
+            this.comment_label.ForeColor = ColorTranslator.FromHtml("#A22631");
+            this.preview_comments_label.ForeColor = ColorTranslator.FromHtml("#A22631");
+
+
         }
         private void data_show()
         {
@@ -114,6 +127,17 @@ namespace unipi_tour_guide
                     this.Show();
                 }
             }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // displaying about info
+            MessageBox.Show("Developed by: Karampinas Dimosthenis & Simotas Iasonas as part of Rapid Application Development Course :)");
         }
     }
 }

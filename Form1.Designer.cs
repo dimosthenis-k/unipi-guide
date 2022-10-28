@@ -38,7 +38,6 @@
             this.signup_label = new System.Windows.Forms.LinkLabel();
             this.banner_picturebox = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.banner_picturebox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,28 +45,28 @@
             // 
             this.username.AutoSize = true;
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(145, 142);
+            this.username.Location = new System.Drawing.Point(123, 133);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(105, 24);
+            this.username.Size = new System.Drawing.Size(156, 24);
             this.username.TabIndex = 0;
-            this.username.Text = "Username";
+            this.username.Text = "Όνομα Χρήστη";
             this.username.Click += new System.EventHandler(this.label1_Click);
             // 
             // password
             // 
             this.password.AutoSize = true;
             this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password.Location = new System.Drawing.Point(145, 204);
+            this.password.Location = new System.Drawing.Point(155, 204);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(100, 24);
+            this.password.Size = new System.Drawing.Size(89, 24);
             this.password.TabIndex = 1;
-            this.password.Text = "Password";
+            this.password.Text = "Κωδικός";
             // 
             // username_textbox
             // 
             this.username_textbox.Location = new System.Drawing.Point(145, 169);
             this.username_textbox.Name = "username_textbox";
-            this.username_textbox.Size = new System.Drawing.Size(100, 20);
+            this.username_textbox.Size = new System.Drawing.Size(113, 20);
             this.username_textbox.TabIndex = 2;
             // 
             // password_textbox
@@ -75,7 +74,7 @@
             this.password_textbox.Location = new System.Drawing.Point(145, 231);
             this.password_textbox.Name = "password_textbox";
             this.password_textbox.PasswordChar = '*';
-            this.password_textbox.Size = new System.Drawing.Size(100, 20);
+            this.password_textbox.Size = new System.Drawing.Size(113, 20);
             this.password_textbox.TabIndex = 3;
             // 
             // no_account_link
@@ -85,10 +84,10 @@
             this.no_account_link.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.no_account_link.Location = new System.Drawing.Point(124, 316);
             this.no_account_link.Name = "no_account_link";
-            this.no_account_link.Size = new System.Drawing.Size(143, 13);
+            this.no_account_link.Size = new System.Drawing.Size(134, 13);
             this.no_account_link.TabIndex = 4;
             this.no_account_link.TabStop = true;
-            this.no_account_link.Text = "Continue without an account";
+            this.no_account_link.Text = "Συνέχεια χωρίς εγγραφή";
             this.no_account_link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.no_account_link_LinkClicked);
             // 
             // login_button
@@ -98,7 +97,7 @@
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(75, 23);
             this.login_button.TabIndex = 5;
-            this.login_button.Text = "Log In";
+            this.login_button.Text = "Είσοδος";
             this.login_button.UseVisualStyleBackColor = true;
             this.login_button.Click += new System.EventHandler(this.login_button_Click);
             // 
@@ -107,12 +106,12 @@
             this.signup_label.ActiveLinkColor = System.Drawing.Color.PowderBlue;
             this.signup_label.AutoSize = true;
             this.signup_label.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.signup_label.Location = new System.Drawing.Point(172, 293);
+            this.signup_label.Location = new System.Drawing.Point(168, 293);
             this.signup_label.Name = "signup_label";
-            this.signup_label.Size = new System.Drawing.Size(45, 13);
+            this.signup_label.Size = new System.Drawing.Size(52, 13);
             this.signup_label.TabIndex = 6;
             this.signup_label.TabStop = true;
-            this.signup_label.Text = "Sign Up";
+            this.signup_label.Text = "Εγγραφή";
             this.signup_label.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signup_label_LinkClicked);
             // 
             // banner_picturebox
@@ -131,30 +130,19 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(159, 362);
+            this.button1.Location = new System.Drawing.Point(159, 424);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
-            this.button1.Text = "EXIT";
+            this.button1.Text = "Έξοδος";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(13, 424);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Authors";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(383, 459);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.banner_picturebox);
             this.Controls.Add(this.signup_label);
@@ -186,7 +174,6 @@
         private System.Windows.Forms.LinkLabel signup_label;
         private System.Windows.Forms.PictureBox banner_picturebox;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
     }
 }
 

@@ -64,6 +64,17 @@ namespace unipi_tour_guide
         private void Form2_Load(object sender, EventArgs e)
 
         {
+            // setting form colors on load
+            this.BackColor = ColorTranslator.FromHtml("#222C54");
+
+            // label colors
+            this.name_label.ForeColor = ColorTranslator.FromHtml("#A22631");
+            this.password_label.ForeColor = ColorTranslator.FromHtml("#A22631");
+            this.email_label.ForeColor = ColorTranslator.FromHtml("#A22631");
+
+            // picturebox
+            this.signup_picturebox.Image = Image.FromFile(@"resources/unipi-logo.png");
+
             Create_db();
         }
 
@@ -96,10 +107,13 @@ namespace unipi_tour_guide
 
                 cmd.ExecuteNonQuery();
 
+                // displaying singup completion
+                MessageBox.Show("Επιτυχής Εγγραφή");
+
             }
             catch (Exception)
             {
-                Console.WriteLine("cannot insert data");
+                Console.WriteLine("Αποτυχία Εγγραφής");
                 return;
             }
         }
@@ -124,6 +138,21 @@ namespace unipi_tour_guide
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Δημοσθένης Καραμπίνας-Ιάσονας Σιμώτας");
+        }
+
+        private void signup_picturebox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Developed by: Karampinas Dimosthenis & Simotas Iasonas as part of Rapid Application Development Course :)");
         }
     }
 }

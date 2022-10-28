@@ -112,6 +112,11 @@ namespace unipi_tour_guide
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void btnnext_Click(object sender, EventArgs e)
         {
       

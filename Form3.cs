@@ -13,6 +13,7 @@ namespace unipi_tour_guide
     public partial class Form3 : Form
     {
 
+
         private int imageNumber = 1;
 
         // function that swaps slideshow picturebox pictures
@@ -51,9 +52,6 @@ namespace unipi_tour_guide
 
             schools_section_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
             schools_section_button.BackColor = ColorTranslator.FromHtml("#A22631");
-
-            services_section_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
-            services_section_button.BackColor = ColorTranslator.FromHtml("#A22631");
 
             contact_section_button.ForeColor = ColorTranslator.FromHtml("#F7F2EB");
             contact_section_button.BackColor = ColorTranslator.FromHtml("#A22631");
@@ -113,7 +111,10 @@ namespace unipi_tour_guide
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            if (!form1.getUserStatus())
+            {
+                ratings_section_button.Enabled = false;
+            }
         }
 
         private void contact_section_button_Click(object sender, EventArgs e)
@@ -151,8 +152,16 @@ namespace unipi_tour_guide
 
         private void ratings_section_button_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
            Comments comments = new Comments();
            comments.Show();
+=======
+            if (form1.isUserLoggedIn)
+            {
+                Comments comments = new Comments();
+                comments.Show();
+            }
+>>>>>>> fb179189c2019da32d43d80314f71270fbffee58
         }
     }
 }

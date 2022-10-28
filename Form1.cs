@@ -13,7 +13,20 @@ namespace unipi_tour_guide
 {
     public partial class form1 : Form
     {
-       
+
+
+        // public bool to check user login
+        public static bool isUserLoggedIn = false;
+        
+        public static bool getUserStatus()
+        {
+            return isUserLoggedIn;
+        }
+
+        public static void setUserStatus(bool status)
+        {
+            isUserLoggedIn = status;
+        }
 
         public form1()
         {
@@ -55,18 +68,22 @@ namespace unipi_tour_guide
 
         private void signup_label_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           
+
             Form2 SignUp = new Form2();
             SignUp.Show();
 
             // disabling sign up labeling after clicking | prevents multiple sign up forms from appearing
-            signup_label.Enabled = false; 
+            //signup_label.Enabled = false; 
         }
 
         private void no_account_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            // public boolean to check if user is logged in from other forms
+            bool isUserLoggedIn = false;
+
             // displaying guest user limitations notification
             MessageBox.Show("Σημαντικό: Μερικές από τις λειτουργίες της εφαρμογής δεν θα είναι διαθέσιμες αν συνεχίσετε ως επισκέπτης.");
+
 
             Form3 mainMenu = new Form3();
             mainMenu.Show();
@@ -77,7 +94,7 @@ namespace unipi_tour_guide
         {
            if (username_textbox.Text.Trim()=="" && password_textbox.Text.Trim()=="")
             {
-                MessageBox.Show("Empty Fields", "Error");
+                MessageBox.Show("Παρακαλώ συμπληρώστε όλα τα πεδία.");
             }
            else
             {
@@ -93,14 +110,15 @@ namespace unipi_tour_guide
 
                 if (dt.Rows.Count>0)
                 {
-                    MessageBox.Show("You are Logged in", "Login Successfull");
+                    MessageBox.Show("Επιτυχής Είσοδος.");
                     Form3 mainMenu = new Form3();
+                    isUserLoggedIn = true;
                     mainMenu.Show();
 
                 }
                 else
                 {
-                    MessageBox.Show("Login Failed","Error");
+                    MessageBox.Show("Αποτυχία Πιστοποίησης.");
                 }
             }
 
