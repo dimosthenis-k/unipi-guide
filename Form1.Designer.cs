@@ -45,28 +45,28 @@
             // 
             this.username.AutoSize = true;
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(123, 133);
+            this.username.Location = new System.Drawing.Point(145, 142);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(156, 24);
+            this.username.Size = new System.Drawing.Size(105, 24);
             this.username.TabIndex = 0;
-            this.username.Text = "Όνομα Χρήστη";
+            this.username.Text = "Username";
             this.username.Click += new System.EventHandler(this.label1_Click);
             // 
             // password
             // 
             this.password.AutoSize = true;
             this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password.Location = new System.Drawing.Point(155, 204);
+            this.password.Location = new System.Drawing.Point(145, 204);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(89, 24);
+            this.password.Size = new System.Drawing.Size(100, 24);
             this.password.TabIndex = 1;
-            this.password.Text = "Κωδικός";
+            this.password.Text = "Password";
             // 
             // username_textbox
             // 
             this.username_textbox.Location = new System.Drawing.Point(145, 169);
             this.username_textbox.Name = "username_textbox";
-            this.username_textbox.Size = new System.Drawing.Size(113, 20);
+            this.username_textbox.Size = new System.Drawing.Size(100, 20);
             this.username_textbox.TabIndex = 2;
             // 
             // password_textbox
@@ -74,7 +74,7 @@
             this.password_textbox.Location = new System.Drawing.Point(145, 231);
             this.password_textbox.Name = "password_textbox";
             this.password_textbox.PasswordChar = '*';
-            this.password_textbox.Size = new System.Drawing.Size(113, 20);
+            this.password_textbox.Size = new System.Drawing.Size(100, 20);
             this.password_textbox.TabIndex = 3;
             // 
             // no_account_link

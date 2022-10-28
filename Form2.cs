@@ -144,16 +144,6 @@ namespace unipi_tour_guide
         {
 
         }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Developed by: Karampinas Dimosthenis & Simotas Iasonas as part of Rapid Application Development Course :)");
-        }
     }
 }
 
