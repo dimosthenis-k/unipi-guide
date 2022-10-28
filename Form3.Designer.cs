@@ -167,33 +167,28 @@
             this.ratings_section_button.Text = "Σχόλια Χρηστών";
             this.ratings_section_button.UseVisualStyleBackColor = true;
             this.ratings_section_button.Click += new System.EventHandler(this.ratings_section_button_Click);
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(242, 393);
+            /*this.button1.Location = new System.Drawing.Point(242, 393);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 11;
             this.button1.Text = "EXIT";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click);*/
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(103, 393);
+       /*     this.button2.Location = new System.Drawing.Point(103, 393);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 12;
             this.button2.Text = "authors";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-=======
->>>>>>> fb179189c2019da32d43d80314f71270fbffee58
->>>>>>> e438b481183aa611c76e781b9e981526663deefa
+            this.button2.Click += new System.EventHandler(this.button2_Click);*/
+
             // 
             // Form3
             // 

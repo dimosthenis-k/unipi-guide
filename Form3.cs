@@ -152,16 +152,10 @@ namespace unipi_tour_guide
 
         private void ratings_section_button_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
            Comments comments = new Comments();
            comments.Show();
-=======
-            if (form1.isUserLoggedIn)
-            {
-                Comments comments = new Comments();
-                comments.Show();
-            }
->>>>>>> fb179189c2019da32d43d80314f71270fbffee58
+
         }
     }
 }
