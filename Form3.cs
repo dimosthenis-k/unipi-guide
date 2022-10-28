@@ -148,5 +148,11 @@ namespace unipi_tour_guide
             //Calendar cal = new Calendar();
             //cal.Show();
         }
+
+        private void ratings_section_button_Click(object sender, EventArgs e)
+        {
+           Comments comments = new Comments();
+           comments.Show();
+        }
     }
 }
