@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace unipi_tour_guide
 {
@@ -23,11 +24,14 @@ namespace unipi_tour_guide
 
         private void ContactForm_Load(object sender, EventArgs e)
         {
-
+            label1.ForeColor = ColorTranslator.FromHtml("#A22631");
 
 
             // loading contact info text
-            contact_info_textbox.LoadFile(".//resources//info.txt", RichTextBoxStreamType.PlainText);
+            //contact_info_textbox.LoadFile(".//resources//info.txt", RichTextBoxStreamType.PlainText);
+
+            contact_info_textbox.Text = File.ReadAllText(".//resources//info.txt");
+
 
             // setting save icon location
             saveiconpb.ImageLocation = "./resources/saveicon.png";

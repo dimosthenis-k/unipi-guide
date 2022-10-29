@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace unipi_tour_guide
 {
@@ -37,22 +38,26 @@ namespace unipi_tour_guide
 
         private void button1_Click(object sender, EventArgs e)
         {
-            school_info_textbox.LoadFile(".//resources//econ.txt", RichTextBoxStreamType.PlainText);
+            //school_info_textbox.LoadFile(".//resources//econ.txt", RichTextBoxStreamType.PlainText);
+            school_info_textbox.Text = File.ReadAllText(".//resources//econ.txt");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            school_info_textbox.LoadFile(".//resources//maritime.txt", RichTextBoxStreamType.PlainText);
+            //school_info_textbox.LoadFile(".//resources//maritime.txt", RichTextBoxStreamType.PlainText);
+            school_info_textbox.Text = File.ReadAllText(".//resources//maritime.txt");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            school_info_textbox.LoadFile(".//resources//finance.txt", RichTextBoxStreamType.PlainText);
+            //school_info_textbox.LoadFile(".//resources//finance.txt", RichTextBoxStreamType.PlainText);
+            school_info_textbox.Text = File.ReadAllText(".//resources//finance.txt");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            school_info_textbox.LoadFile(".//resources//computerscience.txt", RichTextBoxStreamType.PlainText);
+            //hool_info_textbox.LoadFile(".//resources//computerscience.txt") RichTextBoxStreamType.PlainText);
+            school_info_textbox.Text = File.ReadAllText(".//resources//computerscience.txt");
         }
 
         private void aboiutToolStripMenuItem_Click(object sender, EventArgs e)
