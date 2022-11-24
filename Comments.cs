@@ -16,7 +16,7 @@ namespace unipi_tour_guide
 
         string path = "data_table_2.db";
         //string cs = @"URI=file" + Application.StartupPath + "\\data_table_2.db";
-        string cs = "Data source=data_table.db;Version=3";
+        string cs = "Data source=data_table_2.db;Version=3";
 
         SQLiteConnection con;
         SQLiteCommand cmd;
@@ -79,6 +79,7 @@ namespace unipi_tour_guide
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             var con = new SQLiteConnection(cs);
             con.Open();
             var cmd = new SQLiteCommand(con);
@@ -96,7 +97,7 @@ namespace unipi_tour_guide
                 cmd.Parameters.AddWithValue("@comments", COMMENTS);
                 
 
-                dataGridView1.ColumnCount = 3;
+                dataGridView1.ColumnCount = 2;
                 dataGridView1.Columns[0].Name = "Username";
                 dataGridView1.Columns[1].Name = "Comments";
                 
@@ -104,6 +105,7 @@ namespace unipi_tour_guide
                 dataGridView1.Rows.Add(row);
 
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("Επιτυχής Εγγραφή");
 
             }
             catch (Exception)
