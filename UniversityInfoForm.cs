@@ -19,7 +19,7 @@ namespace unipi_tour_guide
 
         private void UniversityInfoForm_Load(object sender, EventArgs e)
         {   
-
+            unipi_browser.ScriptErrorsSuppressed = true;
             // form background color
             this.BackColor = ColorTranslator.FromHtml("#222C54");
 
